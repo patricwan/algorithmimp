@@ -40,7 +40,7 @@ public class BinaryHeapFindFrequency {
             }
         });
 
-        //Maintain a priorityQueue which is actually a heap.
+        //Maintain a priorityQueue which is actually a binary heap.
         //Iterate each lement in the key-count map.   (2,5), (3,6),(4,2),....(13,4)
         for (Object key : numCountMap.keySet())
         {
