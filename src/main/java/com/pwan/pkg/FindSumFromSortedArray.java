@@ -5,10 +5,10 @@ public class FindSumFromSortedArray {
     public static void main(String[] args) {
 
         System.out.println("This is the start of main program");
-        int[] testNums = new int[]{1, 3, 7, 11,15, 19};
+        int[] testNums = new int[]{1, 3, 7, 11, 15, 19};
 
         int[] foundIndex = findTwoSum(testNums, 16);
-        for (int i=0;i < testNums.length; i ++) {
+        for (int i = 0; i < testNums.length; i++) {
             System.out.println(" found Index " + foundIndex[i]);
         }
 
@@ -21,7 +21,7 @@ public class FindSumFromSortedArray {
 
         boolean bFound = false;
         int tgTwo[] = new int[2];
-        while (i!=j && !bFound) {
+        while (i != j && !bFound) {
             int currentSum = numbers[i] + numbers[j];
             if (currentSum == target) {
                 tgTwo[0] = i;
@@ -30,7 +30,7 @@ public class FindSumFromSortedArray {
             } else if (currentSum < target) {
                 i = i + 1;
             } else {
-                j = j-1;
+                j = j - 1;
             }
         }
         if (!bFound) {

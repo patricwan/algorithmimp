@@ -7,8 +7,8 @@ public class GreedyShareBiscuits {
     public static void main(String[] args) {
         System.out.println("This is the start of main program");
 
-        int[] reqs = {2,3,2,1,5,6,7,3};
-        int[] avails = {5,3,2,1,4,2,2};
+        int[] reqs = {2, 3, 2, 1, 5, 6, 7, 3};
+        int[] avails = {5, 3, 2, 1, 4, 2, 2};
 
         int satifiedNum = findContentChildren(reqs, avails);
         System.out.println(" satified " + satifiedNum);
@@ -32,8 +32,8 @@ public class GreedyShareBiscuits {
             }
             j++;
         }
-    return i;
-        
+        return i;
+
     }
 
 }
