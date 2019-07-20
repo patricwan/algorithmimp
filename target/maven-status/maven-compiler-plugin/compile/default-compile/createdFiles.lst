@@ -1,4 +1,12 @@
+com/pwan/pkg/FinishCourses.class
 com/pwan/pkg/SortGroup.class
-com/pwan/pkg/GreedyShareBiscuits.class
+com/pwan/pkg/FindRedundantConnection.class
 com/pwan/pkg/BinaryHeapFindFrequency$1.class
+com/pwan/pkg/Trie.class
+com/pwan/pkg/PreorderTraverse.class
+com/pwan/pkg/BalancedTree.class
 com/pwan/pkg/BinaryHeapFindFrequency.class
+com/pwan/pkg/KthSmallestInBinaryTree.class
+com/pwan/pkg/GreedyShareBiscuits.class
+com/pwan/pkg/TreeNode.class
+com/pwan/pkg/FindTreeBottomLeftValue.class
