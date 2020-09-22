@@ -1,15 +1,15 @@
 https://leetcode-cn.com/problemset/algorithms/
-167
-215
-347
-75
-455
-69
-241
-160
-1
-242
-232
+167  https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
+215  https://leetcode-cn.com/problems/kth-largest-element-in-an-array/
+347  https://leetcode-cn.com/problems/top-k-frequent-elements/
+75  https://leetcode-cn.com/problems/sort-colors/
+455 https://leetcode-cn.com/problems/assign-cookies/
+69  https://leetcode-cn.com/problems/sqrtx/
+241  https://leetcode-cn.com/problems/different-ways-to-add-parentheses/
+160 https://leetcode-cn.com/problems/intersection-of-two-linked-lists/
+1 https://leetcode-cn.com/problems/two-sum/
+242  https://leetcode-cn.com/problems/valid-anagram/
+232 https://leetcode-cn.com/problems/implement-queue-using-stacks/
 字符串：https://leetcode.com/problems/longest-palindrome/description/
 数组和矩阵：https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/
 位运算：https://leetcode.com/problems/single-number-iii/description/
