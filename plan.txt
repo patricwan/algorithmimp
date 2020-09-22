@@ -1,5 +1,4 @@
 https://leetcode-cn.com/problemset/algorithms/
-
 167
 215
 347
@@ -11,21 +10,12 @@ https://leetcode-cn.com/problemset/algorithms/
 1
 242
 232
-   
-LeetCode算法作业打卡日，完成本周LeetCode题目作业，并且提交通过，进行打卡 详细说明：
-答案在下周LeetCode任务布置后公布LeetCode算法题：
 字符串：https://leetcode.com/problems/longest-palindrome/description/
 数组和矩阵：https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/
 位运算：https://leetcode.com/problems/single-number-iii/description/
 数学进制转换：https://leetcode.com/problems/base-7/description/
 相遇问题：https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/
 多数投票问题：https://leetcode.com/problems/majority-element/description/
-第二周LeetCode参考答案：链接：https://pan.baidu.com/s/19qAtmWbc1sXUWFEFb4wH2g 提取码：wcx4
-打卡要求：LeetCode作业中所有题目通过截图提交打卡内容：至少上传6张图片
-
-任务简介：LeetCode算法作业打卡日，完成本周LeetCode题目作业，并且提交通过，进行打卡
-详细说明：答案在下周LeetCode任务布置后公布
-Leetcode算法题：树：递归（110）：
 https://leetcode.com/problems/balanced-binary-tree/description/
 层次遍历（513）：https://leetcode.com/problems/find-bottom-left-tree-value/description/
 前中后序遍历（144）：https://leetcode.com/problems/binary-tree-preorder-traversal/description/
@@ -34,11 +24,6 @@ Trie（208）：https://leetcode.com/problems/implement-trie-prefix-tree/descrip
 图：二分图（785）：https://leetcode.com/problems/is-graph-bipartite/description/
 拓扑排序（207）：https://leetcode.com/problems/course-schedule/description/
 并查集（684）：https://leetcode.com/problems/redundant-connection/description/
-第三周LeetCode参考答案：链接：https://pan.baidu.com/s/1kpEu2QAzRQgBOZKav8mGcA 提取码：x041
-打卡要求：LeetCode作业中所有题目通过截图提交打卡内容：至少上传8张图片
-
-任务简介：LeetCode算法作业打卡日，完成本周LeetCode题目作业，并且提交通过，进行打卡
-详细说明：答案在下周LeetCode任务布置后公布LeetCode算法题：
 搜索：BFS（279）：https://leetcode.com/problems/perfect-squares/description/
 DFS（695）：https://leetcode.com/problems/max-area-of-island/description/
 Backtracking（17）：https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
