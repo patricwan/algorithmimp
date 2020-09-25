@@ -1,0 +1,113 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.ScenarioList"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+    xmlns:semantic="sap.m.semantic">
+	<semantic:FullscreenPage
+		id="page">
+	<semantic:content>
+		   <Table
+				id="scenariosTable"
+				width="auto"
+				class="sapUiResponsiveMargin"
+				growing="true"
+				items="{
+					path: 'scenarios>/'
+					  }"> 
+				<headerToolbar>
+					<Toolbar>
+						<ToolbarSpacer />
+						<SearchField id="searchField" width="auto" search="onFilterScenarios" />
+					</Toolbar>
+				</headerToolbar>
+				 
+				<columns>
+					<Column width="20%" id="scenarioName" hAlign="Middle" vAlign="Middle">
+						<Text text="Scenario" id="scenarioNameText"/>
+					</Column>
+			        <Column width="30%" id="gatlingFile" hAlign="Middle" vAlign="Middle">
+				       	<Text text="Gatling" id="gatlingText"/>
+					</Column>
+					<Column width="10%" id="gatlingStatus" hAlign="Middle" vAlign="Middle">
+				       	<Image src="./images/gatlingSmall.png" densityAware="false" width="3em" >
+					               <layoutData>
+						             <FlexItemData growFactor="0.5" />
+					             </layoutData>
+				        </Image>
+					</Column>
+					<Column width="30%" id="loadRunnerName" hAlign="Middle" vAlign="Middle">
+				       	<Text text="Load Runner" id="loadRunnerNameText"/>
+					</Column>
+				 <Column width="10%" id="loadRunnerStatus" hAlign="Middle" vAlign="Middle">
+						<Image src="./images/LoadRunner.png" densityAware="false" width="3em" >
+					               <layoutData>
+						             <FlexItemData growFactor="0.5" />
+					             </layoutData>
+				        </Image>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem
+						vAlign="Middle"
+						type="Navigation"
+						press="onItemPressed">
+						<cells>
+							<ObjectIdentifier
+								title="{scenarios>scenarioName}"/>
+							<Text
+								text="{scenarios>gatlingName}"/>
+					        <Image src="{ path: 'scenarios>gatlingName',
+						                  formatter: '.formatter.gatlingStatus'
+					                    }" densityAware="false" width="3em" >
+					               <layoutData>
+						             <FlexItemData growFactor="0.5" />
+					             </layoutData>
+				             </Image>
+					        <Text
+								text="{scenarios>loadrunnerName}"/>
+                            <Image src="{ path: 'scenarios>loadrunnerName',
+						                  formatter: '.formatter.loadrunnerStatus'
+					                    }" densityAware="false" width="3em" >
+					               <layoutData>
+						             <FlexItemData growFactor="0.5" />
+					             </layoutData>
+				             </Image>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+
+            
+		<!--	<Button
+				class="sapUiSmallMarginBottom"
+				text="Create Scenario"
+				press="showCreateScenarioDialog">
+			</Button>  -->
+			
+		</semantic:content>
+
+			
+			<semantic:addAction>
+						<semantic:AddAction press="showCreateScenarioDialog"/>
+					</semantic:addAction>
+					
+			<semantic:printAction>
+			    <semantic:PrintAction press="onSemanticButtonPress"/>
+		   </semantic:printAction>
+					<semantic:messagesIndicator>
+						<semantic:MessagesIndicator press="onMessagesButtonPress"/>
+					</semantic:messagesIndicator>
+		
+		  <semantic:customFooterContent>
+					<OverflowToolbarButton icon="sap-icon://settings" text="Settings" press="onPress"/>
+					<OverflowToolbarButton icon="sap-icon://video" text="Video" press="onPress"/>
+				</semantic:customFooterContent>
+
+				<semantic:customShareMenuContent>
+					<Button text="CustomShareBtn1" icon="sap-icon://color-fill" press="onPress"/>
+					<Button text="CustomShareBtn2" icon="sap-icon://crop" press="onPress"/>
+			</semantic:customShareMenuContent>
+				
+	</semantic:FullscreenPage>
+</mvc:View>

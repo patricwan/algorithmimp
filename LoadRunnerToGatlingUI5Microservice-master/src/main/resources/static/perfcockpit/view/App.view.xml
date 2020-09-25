@@ -1,0 +1,8 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<App id="app" backgroundImage="images/startpage.png"
+		 backgroundOpacity="0.3"/>
+</mvc:View>

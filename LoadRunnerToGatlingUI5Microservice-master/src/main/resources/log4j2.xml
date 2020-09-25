@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex
+        </Property>
+    </Properties>
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+         
+         <File name="AppFileAppender" fileName="app_log.log" >
+            <PatternLayout>
+                <pattern>
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </File> 
+        
+    </Appenders>
+    <Loggers>
+        <Logger name="com.sap.micro.service.ui5.scenario" level="info" additivity="false">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="AppFileAppender" />
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender" />
+        </Root>
+    </Loggers>
+    
+  <RollingFile name="FileAppender" fileName="demo.log" 
+             filePattern="demo-%d{yyyy-MM-dd}-%i.log">
+    <PatternLayout>
+        <Pattern>${LOG_PATTERN}</Pattern>
+    </PatternLayout>
+    <Policies>
+        <SizeBasedTriggeringPolicy size="10MB" />
+    </Policies>
+    <DefaultRolloverStrategy max="10"/>
+</RollingFile>
+
+</Configuration>

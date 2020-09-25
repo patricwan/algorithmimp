@@ -1,0 +1,23 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.Home"
+	xmlns="sap.m"
+	xmlns:u="sap.ui.unified"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>homePageTitle}" class="sapUiResponsiveContentPadding">
+		<content>
+			<Button id="displayNotFoundBtn" text="{i18n>DisplayNotFound}" press="onDisplayNotFound" class="sapUiTinyMarginEnd"/>
+			<Button id="employeeListBtn" text="{i18n>ShowEmployeeList}" press="onNavToEmployees" class="sapUiTinyMarginEnd"/>
+			<Button id="employeeOverviewBtn" text="{i18n>ShowEmployeeOverview}" press="onNavToEmployeeOverview" class="sapUiTinyMarginEnd"/>
+			
+		<u:FileUploader id="fileUploader"
+			            name="myFileUpload"
+			            uploadUrl="upload/"
+			            tooltip="Upload your file to the local server"
+			            uploadComplete="handleUploadComplete"/>
+		<Button text="Upload File" press="handleUploadPress"/>
+		
+		<Button id="loginBtn" text="{i18n>Logon}" press="onNavToLogonPage" class="sapUiTinyMarginEnd"/>
+		
+		</content>
+	</Page>
+</mvc:View>

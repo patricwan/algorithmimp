@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2f9ba6+3,1e6184+100 */
+    background: #2f9ba6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2f9ba6 3%, #1e6184 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #2f9ba6 3%,#1e6184 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #2f9ba6 3%,#1e6184 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f9ba6', endColorstr='#1e6184',GradientType=0 ); /* IE6-9 */
+}
+
+.globalLogin,
+.globalLogin a,
+.globalLogin a:link,
+.globalLogin a:visited,
+.globalLogin a:hover,
+.globalLogin a:focus,
+.globalLogin a:active,
+.globalLogin a.text,
+.globalLogin a:link.text,
+.globalLogin a:visited.text,
+.globalLogin a:hover.text,
+.globalLogin a:focus.text,
+.globalLogin a:active.text,
+.globalLogin .sapMBtnInner.sapMBtnDefault,
+.globalLogin .sapMBtnInner.sapMBtnTransparent,
+.globalLogin .sapMBtnInner.sapMBtnTransparent > .sapMBtnIcon,
+.globalLogin .sapMInputBaseInner,
+.globalLogin .sapMLabel {
+    color: rgba(255,255,255,1);
+}
+
+.bizxLogin {
+    font-size: 13px;
+}
+
+.globalLoginBgOverlay {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.globalLoginFooter,
+.globalLoginFooter a,
+.globalLoginFooter a:link,
+.globalLoginFooter a:visited,
+.globalLoginFooter a:hover,
+.globalLoginFooter a:focus,
+.globalLoginFooter a:active {
+    color: rgba(255,255,255,0.65);
+}
+
+.hiddenAriaContent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.rtl .hiddenAriaContent {
+    left: auto; /* rtl-view */
+    right: 0; /* rtl-view */
+}
+
+.globalLoginLogoContainer {
+  text-align: center;
+  width: 100%;
+}
+
+.globalLoginLogoURL {
+    display: none;
+    visibility: hidden;
+}
+
+.globalLoginLogoImg {
+    display: none;
+}
+
+.bizxLogo {
+    width: 100%;
+}
+
+.globalLoginLogoImg,
+.bizxLogo,
+.companyEntryMessage,
+.loginMessage {
+    margin-bottom: 40px;
+}
+
+.companyIDText {
+    font-weight: bolder;
+}
+
+.loginFooter,
+.bizxLogin .sapMAppBG,
+.bizxLogin .loginApp {
+    background: none !important;
+    filter: none !important;
+    border: none !important;
+}
+
+.mainAppContent {
+    position: absolute;
+    width: 343px;
+    top: 20%;
+    left: 50%;
+    margin-left: -171px;
+}
+
+.dynamic_header {
+    /* Forces height of header to include margins of inner children. */
+    padding: 1px 0;
+    margin: -1px 0;
+}
+
+/* START: Footer */
+.loginFooter {
+    height: auto !important;
+    text-shadow: none !important;
+}
+.globalLoginFooter {
+    background-image: url(/ui/login/img/sf_logo_new_white.png);
+}
+.bizXFooter {
+    white-space: normal !important;
+    background-position: right 50px top;
+    background-repeat: no-repeat;
+    min-height: 38px; /* 34px height of background-image + 4px padding */
+    padding: 0 40% 30px 50px;
+    position: relative;
+    line-height: 12px;
+    font-size: 10px;
+}
+.rtl .bizXFooter {
+    background-position: left 50px top;
+    padding: 0 50px 30px 40%;
+}
+@media (max-width: 968px) {
+    .bizXFooter {
+        padding-right: 240px
+    }
+    .rtl .bizXFooter {
+        padding-left: 240px
+    }
+}
+@media (max-width: 767px) {
+    .bizXFooter,
+    .globalThemed .globalLoginFooter.bizXFooter {
+        background-image: none; /* Phones do not show the icon image in the footer. */
+        padding: 0 25px 25px 25px; /* Removing space for image on phone. */
+    }
+}
+.loginFooter .sapMBarLeft {
+    height: auto;
+    position: static;
+}
+.loginFooter .sapMBarContainer {
+    padding: 0;
+}
+/* END: Footer */
+
+
+/* START: Version Info Dialog */
+.versionInfo,
+.versionInfo h3,
+.versionInfo strong {
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #3c3c3c;
+    -webkit-user-select: initial!important;
+}
+/* END: Version Info Dialog */
+
+
+/* START: Buttons */
+.globalLogin .sapMBtnInner.sapMBtnEmphasized {
+    background-color: #F2A900;
+    border-color: #F2A900;
+    color: #FFFFFF;
+}
+.bizxLogin .sapMBtnInner.sapMBtnEmphasized {
+    background-image: none;
+    text-shadow: none;
+    font-weight: bold;
+}
+.bizxLogin .sapMBtnInner.sapMBtnTransparent,
+.bizxLogin .sapMBtnInner.sapMBtnTransparent>.sapMBtnIcon,
+.bizxLogin .sapMBtnInner.sapMBtnDefault {
+    text-shadow: none;
+    background: none;
+    background-color: transparent;
+}
+.globalLogin .sapMBtnInner.sapMBtnDefault {
+    border-color: rgba(255,255,255,0.5);
+}
+.bizxLogin .sapMBtnInner.sapMBtnDefault {
+    border-style: solid;
+    border-width: 1px;
+}
+.globalLogin .sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable,
+.globalLogin .sapMBtn:hover>.sapMBtnDefault {
+    background-color: rgba(255,255,255,0.1);
+}
+.globalLogin :not(.sapMBtnDisabled)>.sapMBtnTransparent.sapMBtnActive, 
+.globalLogin :not(.sapMBtnDisabled):hover>.sapMBtnTransparent.sapMBtnActive,
+.globalLogin .sapMBar-CTX :not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnActive {
+    background-color: rgba(255,255,255,0.2);
+}
+.globalLogin :not(.sapMBtnDisabled)>.sapMBtnInner.sapMBtnEmphasized.sapMBtnActive {
+    background-color: #E59A00;
+    border-color: #E59A00;
+}
+.globalLogin .sapMBtn:hover>.sapMBtnHoverable.sapMBtnEmphasized:not(.sapMBtnActive),
+.globalLogin .sapMBtn:focus>.sapMBtnHoverable.sapMBtnEmphasized:not(.sapMBtnActive) {
+    background-color: #F1A302;
+    border-color: #F1A302;
+}
+.bizxLogin .helpButtonAlign {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: none;
+}
+.rtl .bizxLogin .helpButtonAlign {
+    right: auto;
+    left: 0;
+}
+.bizxLogin .helpButtonAlign.hasAligned {
+    display: block;
+}
+.bizLoginForm .fullButton {
+    width: 100%;
+    margin-top: 30px;
+}
+.halfButton {
+    width: 48%;
+}
+.minHalfButton {
+    min-width: 48%;
+    max-width: 100%;
+}
+.bizxLogin .sapMBtn.endButton {
+    margin-left: 14px;
+}
+.rtl .bizxLogin .sapMBtn.endButton {
+    margin-left: 0;
+    margin-right: 14px;
+}
+.hasInlineButton {
+    width: 100%;
+}
+.hasInlineButton .loginFormInputs .sapUiVltCell {
+    width: 300px;
+}
+.hasInlineButton .inlineButton {
+    padding: 0;
+    height: 2.6rem;
+}
+.inlineButton .sapMBtnInner {
+    border-radius: 2px 2px 2px 0;
+}
+.rtl .inlineButton .sapMBtnInner {
+    border-radius: 2px 0 2px 2px;
+}
+.helpButtonAlign.withInlineButton {
+    right: 44px;
+}
+.rtl .helpButtonAlign.withInlineButton {
+    right: auto;
+    left: 44px;
+}
+.loginFormInputs .sapUiHLayout {
+    width: 100%;
+}
+.loginFormInputs .sapUiHLayoutChildWrapper:nth-child(2) {
+    width: calc(100% - 4.5rem);
+}
+/* END: Buttons */
+
+/* Icon next to input fields */
+.inputIcon {
+    font-size: 28px;
+    line-height: 40px;
+    width: 1.5rem;
+    text-align: center;
+    margin: 0 0 0 6px;
+}
+.rtl .inputIcon {
+    margin: 0 6px 0 0;
+}
+
+/* START: Input Field */
+.bizxLogin .sapMInputDivWrapper {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+.bizxLogin .sapMInput {
+    height: 40px
+}
+.bizxLogin .sapMInputBaseInner {
+    border: none !important;
+    background: transparent !important;
+    height: 32px;
+    margin-left: 0.60rem;
+    margin-right: 0;
+    padding-left: 0.15rem;
+    padding-right: 0;
+    width: 97%;
+}
+.rtl .bizxLogin .sapMInputBaseInner {
+    margin-left: 0;
+    margin-right: 0.60rem;
+    padding-left: 0;
+    padding-right: 0.15rem;
+}
+/* Input field while auto filled. */
+.globalLogin .sapMInputBaseInner:-webkit-autofill,
+.globalLogin .sapMInputBaseInner:-webkit-autofill:hover,
+.globalLogin .sapMInputBaseInner:-webkit-autofill:focus,
+.globalLogin .sapMInputBaseInner:-webkit-autofill:active {
+    -webkit-text-fill-color: #FFF;
+    -webkit-box-shadow: 0 0 0px 1000px #595959 inset; /* If the color changes here, then make sure to make the same change in BizXLoginTheme.css's "loginDarkAutofillBgColor" LESSCSS variable) */
+
+    /*
+     * This hack is used to avoid the Chrome browser bug where the autofill background color cannot be removed
+     * (see https://bugs.chromium.org/p/chromium/issues/detail?id=46543).
+     * The hack causes the background color to not be set until a very long time from
+     * now, thus causing this color to effectively be transparent
+     * (see http://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete).
+     * Note that there appears to be times when this hack doesn't work as expected, but at least it works
+     * for the majority of time.  (An example of this hack not working is to reload the User/Password
+     * screen without explicitly specifying a user/password so that autofill takes effect, then go back
+     * to the Company ID screen, and then enter a Company ID so that the User/Password screen is seen
+     * again.  When this happens, the autofill background is seen.)
+     *
+     * Note that when this hack doesn't work, we rely on another hack, which uses an inset shadow to color
+     * the background with a particuladr opaque color, so that at least we can control what color shows up
+     * as the virtual background color.  This is necessary when the foreground text color for autofill
+     * is too light for the default autofill background color of Chrome (so we only specify the inset
+     * shadow in this particular case).  Note though that this hack doesn't work consistently, since after
+     * the theming CSS stops applying to the page, and then it re-applied, this hack no longer works.
+     */
+    transition-delay: 99999s;
+    transition-property: background-color, -webkit-box-shadow;
+}
+.globalLogin .sapMInputBaseInner::-webkit-input-placeholder /* Chrome/Safari */ {
+    color: rgba(255,255,255,.4);
+}
+.globalLogin .sapMInputBaseInner:-ms-input-placeholder /* Internet Explorer 10-11 */ { 
+    color: rgba(255,255,255,.4);
+}
+.globalLogin .sapMInputBaseInner::-moz-placeholder /* Mozilla Firefox 19+ */ {
+    color: rgba(255,255,255,.4);
+}
+.globalLogin .sapMInputBasePlaceholder /* Internet Explorer 9 */ {
+    color: rgba(255,255,255,.4);
+}
+.rtl .inputWithHelp.inputWithInlineButton .sapMInputBaseInner {
+    padding-left: 3rem;
+    padding-right: 0;
+}
+/* END: Input Field */
+
+/* START: Login Forms */
+.loginFormInputs {
+    width: 100%;
+}
+.bizxLogin .loginFormButtons {
+    background: transparent;
+    box-shadow: none;
+    margin-top: 30px;
+}
+.loginFormButtons .sapMBarRight {
+    padding: 0;
+}
+.globalLoginFormInputs .sapUiVltCell {
+    border-bottom-color: rgba(255,255,255,0.5);
+}
+.loginFormInputs .sapUiVltCell {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin-bottom: 8px;
+}
+.loginFormInputs .sapUiVltCell:empty {
+    display: none;
+}
+.passwordHelpOr {
+    text-transform: uppercase;
+    text-align: center;
+}
+/* END: Login Forms */
+
+/* START: Forgot Company ID */
+.forgotCompanyIDPanel .sapMPanelContent:not(.sapMPanelBGTransparent) {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+/* END: Forgot Company ID */
+
+/* START: Help */
+.helpTitle {
+    font-size: 20px;
+}
+
+.inputIcon {
+	
+}
+
+
+.username {
+   	background: #ffffff;
+    border: 1px solid #b7b7b7;
+    color: #003366;
+    cursor: text;
+    font-family: "arial";
+    font-size: 9pt;
+    height: 18px;
+    padding: 1px; 
+}
+.password {
+   background: #ffffff;
+    border: 1px solid #b7b7b7;
+    color: #003366;
+    cursor: text;
+    font-family: "arial";
+    font-size: 9pt;
+    height: 18px;
+    padding: 1px; 
+}
+
+.fullButton {
+    font-family: "tahoma", "arial"; 
+    font-size: 9pt; color: #003366;
+    border: 0px #93bee2 solid;
+    border-bottom: #93bee2 1px solid;
+    border-left: #93bee2 1px solid;
+    border-right: #93bee2 1px solid;
+    border-top: #93bee2 1px solid;
+    background-color: #ffffff;
+    cursor: hand;
+    font-style: normal ;
+}
+.helpTitle,
+.helpText {
+    margin-bottom: 10px;
+}
+.lastHelpText {
+    margin-bottom: 40px;
+}
+
+html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
+   margin-right: 0.125rem
+}
+
+html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
+   margin-left: 0.125rem
+}
+
+.myAppDemoWT .myCustomText {
+   display: inline-block;
+   font-weight: bold;
+}
+
+/* END: Help */
+
+/* START: Fit & Finish for Mobile */
+@media (max-width: 393px) {
+    .mainAppContent {
+        width: 100%;
+        box-sizing: border-box;
+        left: 0;
+        padding: 0 25px;
+        margin-left: 0;
+    }
+    .bizxLogin .helpButtonAlign {
+        right: 25px;
+    }
+    .helpButtonAlign.withInlineButton {
+        right: 68px;
+    }
+    .rtl .helpButtonAlign.withInlineButton {
+        right: auto;
+        left: 68px;
+    }
+}
+/* END: Fit & Finish for Mobile */
+
+/* START: QR Code */
+.sapUiMedia-Std-Phone .mobileLinkContainer {
+	display: none;
+}
+.mobileLinkContainer {
+    text-align: center;
+    margin: 30px 0;
+    line-height: 23px;
+}
+.mobileActivationIcon {
+    font-size: 36px;
+    position: relative;
+    top: 5px;
+}
+.mobileActivationLink {
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    margin: 0 1rem;
+    text-decoration: underline !important;
+    white-space: normal !important;
+}
+.mobileAppActivationInstructions {
+    width: 300px;
+    font-size: 0.875rem;
+}
+.mobileAppActivationInstructions div + div {
+    padding-top: 1rem;
+}
+.mobileQRCode {
+    width: 158px;
+    margin-right: 1rem;
+}
+/* END: QR Code */
+
+/* START: company check busy indicator */
+.companyCheckPage .sapUiLocalBusyIndicatorAnimation>div::before {
+	background: #ffffff;
+}
+.companyCheckPage .sapUiLocalBusyIndicatorAnimation>div::after {
+    box-shadow: inset 0 0 2px 1px rgb(255, 255, 255);
+}
+.companyCheckPage .sapUiVltCell {
+	text-align: center;
+}
+/* END: company check busy indicator */
+
+.loginQRCodeDialog .loginQRCodeDisabledMsg {
+    font-size: 25px;
+    width: 400px;
+    margin: 3em;
+    white-space: normal;
+}
+
+/* Fix for UI-8442(can't type anything in input tag for ui5), will revert this change in 1705 as UI5 team fixed this in a newer version */
+html.sap-tablet:not(.sap-desktop) input,
+html.sap-tablet:not(.sap-desktop) textarea,
+html.sap-tablet:not(.sap-desktop) [contenteditable=true],
+html.sap-tablet:not(.sap-desktop) [contenteditable=true] > div ,
+html.sap-tablet:not(.sap-desktop) .sapUiSelectable {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+/* Fix for UI-8442(can't type anything in input tag for ui5), will revert this change in 1705 as UI5 team fixed this in a newer version */

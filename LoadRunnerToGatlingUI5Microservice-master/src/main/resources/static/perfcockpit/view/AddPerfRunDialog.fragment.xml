@@ -1,0 +1,40 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:u="sap.ui.unified"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+<Dialog	title="Start One Perf Run" contentWidth="600px">
+  <content>
+    <f:SimpleForm id="SimpleFormToolbar"
+			editable="true"
+			layout="ResponsiveGridLayout">
+		<f:content>	
+		    <Label text="Build Version" labelFor="buildVersion"/>
+			<Input
+				id="idBuildVersion"
+				type="Text"
+				placeholder="Enter Build Version...">
+			</Input>
+
+		    <Label text="Max Users" labelFor="maxUsers"/>
+			<Input
+				id="idMaxUsers"
+				type="Text"
+				placeholder="Enter Max Users...">
+			</Input>		   
+		   
+		    <Label text="Duration Minutes" labelFor="durationMins"/>
+			<Input
+				id="idDurationMins"
+				type="Text"
+				placeholder="Enter Duration Minutes...">
+			</Input>			   
+	  	</f:content>	      
+     </f:SimpleForm>    
+  </content>
+   <buttons>   
+	    <Button text="OK" press="handleSubmit"/>
+	    <Button text="Cancel" press="handleClose"/>
+   </buttons>	    
+</Dialog>
+</core:FragmentDefinition>

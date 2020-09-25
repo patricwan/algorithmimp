@@ -1,0 +1,39 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.LogonPage"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<l:VerticalLayout width="100%">
+	    <Title  level="H1" titleStyle="H1"
+				text="Logon" class="sapUiLargeMarginTop sapUiMediumMarginBottom sapUiSmallMarginBegin"/>
+     	<l:HorizontalLayout class="sapUiContentPadding" >
+				<core:HTML
+						content="&lt;div class=&quot;exampleDiv&quot;&gt;
+									&lt;div class=&quot;propertiesDisplay&quot;&gt;
+										&lt;p&gt;UserName&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;"/>
+	             <Input
+				    id="userNameInput" width="20em"
+				    type="Text"  class="apUiSmallMargin sapThemeHighlight-asColor myCustomText" placeholder="Enter User Name..."/>
+	  </l:HorizontalLayout>
+      <l:HorizontalLayout class="sapUiContentPadding" >
+		          <core:HTML
+						content="&lt;div class=&quot;exampleDiv&quot;&gt;
+									&lt;div class=&quot;propertiesDisplay&quot;&gt;
+										&lt;p&gt;Password&lt;/p&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;"/>
+	              <Input
+				    id="passwordInput" width="20em"
+				    type="Password" class ="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+				    placeholder="Enter Password ..." />
+	  </l:HorizontalLayout>
+	    
+	     <l:HorizontalLayout class="sapUiContentPadding" >
+		    <Button type="sap.m.ButtonType.Emphasized" text="Log in" press="onPressSubmit" class="myCustomButton" width="20em"/>
+	  </l:HorizontalLayout>
+     </l:VerticalLayout>
+</mvc:View>

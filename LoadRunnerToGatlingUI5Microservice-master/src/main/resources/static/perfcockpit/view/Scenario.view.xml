@@ -1,0 +1,171 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.Scenario"
+	xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic"
+	xmlns:tnt="sap.tnt">
+
+<semantic:SemanticPage
+		id="scenarioPage"
+		headerPinnable="true"
+		toggleHeaderOnTitleClick="true"
+		preserveHeaderStateOnScroll="false"
+		titleAreaShrinkRatio="1:1.6:1.6"
+		showFooter="true">
+	
+	   <semantic:titleHeading>
+			<Title text="Scenario Details" />
+		</semantic:titleHeading>
+				<!-- Title Content-->
+		<semantic:titleContent>
+			<Image src="./images/CheckDetails.png" tooltip="This is a Scenario." height="3rem" width="5rem"/>
+		</semantic:titleContent>
+		
+<semantic:headerContent>
+    		<f:SimpleForm
+						editable="false"
+						layout="ResponsiveGridLayout"
+						labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+						columnsL="1" columnsM="1" id="objectHeader">
+						<f:content>
+				            <Label text="Scenario ID" />
+							<Text id="scenarioId" text="{scenario>/scenarioID}" />
+							
+							<Label text="Scenario Name" />
+							<Text id="scenarioName" text="{scenario>/scenarioName}" />
+							
+							<Label text="Gatling Status" />
+						    <tnt:InfoLabel
+						           text="{
+							             parts: [
+								                  {path: 'scenario>/gatlingName'}
+							                    ],
+							                    formatter: '.formatter.gatlingNameText'
+						             }"
+						           displayOnly="true"
+						           colorScheme= "{
+							             parts: [
+								                  {path: 'scenario>/gatlingName'}
+							                    ],
+							                    formatter: '.formatter.gatlingStatusColor'
+						             }"/> 
+						
+							<Label text="Load Runner Status" />
+							<Text id="loadrunnerName" text="{scenario>/loadrunnerName}" />
+						</f:content>
+					</f:SimpleForm>
+</semantic:headerContent>				
+	
+<semantic:content>
+		<Table
+				id="perfrunsTable"
+				width="auto"
+				class="sapUiResponsiveMargin"
+				growing="true"
+				items="{
+					path: 'perfruns>/'
+					}">  
+				<headerToolbar>
+					<Toolbar>
+						<Label id="tableHeader" vAlign="Middle" hAlign="Middle" text="Performance Run List"/>
+						<ToolbarSpacer />
+						<SearchField id="searchField" width="auto" search="onFilterPosts" />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="20%" id="nameColumn" vAlign="Middle">
+						<Text text="PerfRun Id" id="perfRunId"/>
+					</Column>
+					<Column width="20%" id="categoryColumn" vAlign="Middle">
+						<Text text="Build Version" id="buildVersion"/>
+					</Column>
+					<Column width="20%" id="maxUserColumn" hAlign="End" vAlign="Middle">
+						<Text text="Max Users" id="maxUsers"/>
+					</Column>
+				    <Column width="20%" id="durationColumn" hAlign="End" vAlign="Middle">
+						<Text text="Duration Minutes" id="duration"/>
+					</Column>
+				  <Column width="20%" id="statusColumn" hAlign="End" vAlign="Middle">
+						<Text text="Status" id="perfRunStatus"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem
+						vAlign="Middle"
+						type="Navigation"
+						press="onPress">
+						<cells>
+							<ObjectIdentifier
+								title="{perfruns>perfRunId}"/>
+							<Text
+								text="{perfruns>buildVersion}"/>
+							<Text
+								text="{perfruns>maxUsers}"/>
+							<Text
+								text="{perfruns>duration}"/>
+                            <tnt:InfoLabel
+						           text="{
+							             parts: [
+								                  {path: 'perfruns>status'}
+							                    ],
+							                    formatter: '.formatter.perfRunStatusText'
+						             }"
+						           displayOnly="true"
+						           colorScheme= "{
+							             parts: [
+								                  {path: 'perfruns>status'}
+							                    ],
+							                    formatter: '.formatter.perfRunStatusColor'
+						             }"/> 
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>		  		
+		</semantic:content>
+		
+		
+			<semantic:favoriteAction>
+			<semantic:FavoriteAction />
+		</semantic:favoriteAction>
+
+		<semantic:flagAction>
+			<semantic:FlagAction />
+		</semantic:flagAction>
+
+		<semantic:closeAction>
+			<semantic:CloseAction />
+		</semantic:closeAction>
+		
+				<semantic:printAction>
+			<semantic:PrintAction />
+		</semantic:printAction>
+
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction />
+		</semantic:sendEmailAction>
+
+		<semantic:sendMessageAction>
+			<semantic:SendMessageAction />
+		</semantic:sendMessageAction>
+
+		<!-- Custom Share Actions -->
+		<semantic:customShareActions>
+			<Button icon= "sap-icon://bed" text="Bed" />
+			<Button icon= "sap-icon://flight" text="Flight" />
+		</semantic:customShareActions>
+		
+		<semantic:messagesIndicator>
+			<semantic:MessagesIndicator press="onMessagesButtonPress"/>
+		</semantic:messagesIndicator>
+
+		<!-- Custom Footer Content-->
+		<semantic:footerCustomActions>
+		    <Button icon="sap-icon://journey-change" press="handleConvertToGatling" tooltip="Convert To Gatling"/>
+			<Button icon="sap-icon://add-process" press="handleStartPerfRun" tooltip="Start Perf Run"/>
+			<Button text="Save" />
+			<Button text="Cancel" />
+		</semantic:footerCustomActions>
+  </semantic:SemanticPage>
+</mvc:View>
