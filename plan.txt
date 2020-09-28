@@ -10,28 +10,29 @@ https://leetcode-cn.com/problemset/algorithms/
 1 https://leetcode-cn.com/problems/two-sum/
 242  https://leetcode-cn.com/problems/valid-anagram/
 232 https://leetcode-cn.com/problems/implement-queue-using-stacks/
-字符串：https://leetcode.com/problems/longest-palindrome/description/
-数组和矩阵：https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/
-位运算：https://leetcode.com/problems/single-number-iii/description/
-数学进制转换：https://leetcode.com/problems/base-7/description/
-相遇问题：https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/
-多数投票问题：https://leetcode.com/problems/majority-element/description/
-https://leetcode.com/problems/balanced-binary-tree/description/
-层次遍历（513）：https://leetcode.com/problems/find-bottom-left-tree-value/description/
-前中后序遍历（144）：https://leetcode.com/problems/binary-tree-preorder-traversal/description/
-BST（230）：https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
-Trie（208）：https://leetcode.com/problems/implement-trie-prefix-tree/description/
-图：二分图（785）：https://leetcode.com/problems/is-graph-bipartite/description/
-拓扑排序（207）：https://leetcode.com/problems/course-schedule/description/
-并查集（684）：https://leetcode.com/problems/redundant-connection/description/
-搜索：BFS（279）：https://leetcode.com/problems/perfect-squares/description/
-DFS（695）：https://leetcode.com/problems/max-area-of-island/description/
-Backtracking（17）：https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
-动态规划：斐波那契数列（70）：https://leetcode.com/problems/climbing-stairs/description/
-矩阵路径（64）：https://leetcode.com/problems/minimum-path-sum/description/
-数组区间（303）：https://leetcode.com/problems/range-sum-query-immutable/description/
-分割整数（343）：https://leetcode.com/problems/integer-break/description/
-最长递增子序列（300）：https://leetcode.com/problems/longest-increasing-subsequence/description/
-0-1 背包（416）：https://leetcode.com/problems/partition-equal-subset-sum/description/
-股票交易（309）：https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/
-字符串编辑（583）：https://leetcode.com/problems/delete-operation-for-two-strings/description/
+字符串：https://leetcode-cn.com/proble ms/longest-palindrome/description/
+数组和矩阵：https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/description/
+位运算：https://leetcode-cn.com/problems/single-number-iii/description/
+数学进制转换：https://leetcode-cn.com/problems/base-7/description/
+相遇问题：https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements-ii/description/
+多数投票问题：https://leetcode-cn.com/problems/majority-element/description/
+https://leetcode-cn.com/problems/balanced-binary-tree/description/
+层次遍历（513）：https://leetcode-cn.com/problems/find-bottom-left-tree-value/description/
+前中后序遍历（144）：https://leetcode-cn.com/problems/binary-tree-preorder-traversal/description/
+BST（230）：https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/description/
+Trie（208）：https://leetcode-cn.com/problems/implement-trie-prefix-tree/description/
+图：二分图（785）：https://leetcode-cn.com/problems/is-graph-bipartite/description/
+拓扑排序（207）：https://leetcode-cn.com/problems/course-schedule/description/
+并查集（684）：https://leetcode-cn.com/problems/redundant-connection/description/
+friend Circle(547) https://leetcode-cn.com/problems/friend-circles/solution/peng-you-quan-by-leetcode/
+搜索：BFS（279）：https://leetcode-cn.com/problems/perfect-squares/description/
+DFS（695）：https://leetcode-cn.com/problems/max-area-of-island/description/
+Backtracking（17）：https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/description/
+动态规划：斐波那契数列（70）：https://leetcode-cn.com/problems/climbing-stairs/description/
+矩阵路径（64）：https://leetcode-cn.com/problems/minimum-path-sum/description/
+数组区间（303）：https://leetcode-cn.com/problems/range-sum-query-immutable/description/
+分割整数（343）：https://leetcode-cn.com/problems/integer-break/description/
+最长递增子序列（300）：https://leetcode-cn.com/problems/longest-increasing-subsequence/description/
+0-1 背包（416）：https://leetcode-cn.com/problems/partition-equal-subset-sum/description/
+股票交易（309）：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/
+字符串编辑（583）：https://leetcode-cn.com/problems/delete-operation-for-two-strings/description/
