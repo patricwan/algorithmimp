@@ -19,13 +19,19 @@ public class DifferentWaysToAddParenthese {
         //考虑是全数字的情况
         int num = 0;
         int index = 0;
-        while (index < chars.length() && !isOperationChar(chars.charAt(index))) {
+        /* while (index < chars.length() && !isOperationChar(chars.charAt(index))) {
             num = num * 10 + chars.charAt(index) - '0';
             index++;
         }
         //将全数字的情况直接返回
         if (index == chars.length()) {
             res.add(num);
+            return res;
+        }*/
+        if (chars.length() == 1 && !isOperationChar(chars.charAt(0))) {
+            int value = Integer.valueOf(chars);
+            System.out.println("got the only char num " + Integer.valueOf(chars));
+            res.add(new Integer(value));
             return res;
         }
 
